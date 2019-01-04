@@ -28,17 +28,21 @@ http://olado.github.com/doT (todo: update docs with new features added in versio
 
 ## New in version 1.0.0
 
-####Added parameters support in partials
+#### Added parameters support in partials
 
-	{{##def.macro:param:
-		<div>{{=param.foo}}</div>
-	#}}
+```html
+{{##def.macro:param:
+	<div>{{=param.foo}}</div>
+#}}
 
-	{{#def.macro:myvariable}}
+{{#def.macro:myvariable}}
+```
 
-####Node module now supports auto-compilation of dot templates from specified path
+#### Node module now supports auto-compilation of dot templates from specified path
 
-	var dots = require("dot").process({ path: "./views"});
+```js
+var dots = require("dot").process({ path: "./views"});
+```
 
 This will compile .def, .dot, .jst files found under the specified path.
 Details
@@ -53,7 +57,7 @@ Details
    compiled into separate functions and are available via _render.filename.definename
  
    Basic usage:
- ```
+ ```js
         var dots = require("dot").process({path: "./views"});
         dots.mytemplate({foo:"hello world"});
  ```
@@ -64,7 +68,7 @@ Details
   	* Return an object with functions compiled from .dot templates as its properties
   	* Render mytemplate template
  
-####CLI tool to compile dot templates into js files
+#### CLI tool to compile dot templates into js files
 
 	./bin/dot-packer -s examples/views -d out/views
 
