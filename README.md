@@ -9,14 +9,15 @@ Forked from [doT.js](https://github.com/olado/doT) which inherits the fastest an
     runtime evaluation
     runtime interpolation
     compile-time evaluation
-    ~~partials support~~
     conditionals support
     array iterators
     encoding
-    ~~control whitespace - strip or preserve~~(it will remove line break, which leads to js crash)
     streaming friendly
     use it as logic-less or with logic, it is up to you
 
+~~**partials support**~~
+
+~~**control whitespace - strip or preserve**~~ (it will also remove line break, which leads to js crash)
 ## Docs, live playground and samples
 
 http://olado.github.com/doT (todo: update docs with new features added in version 1.0.0)
