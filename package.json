@@ -2,7 +2,7 @@
   "name": "dont",
   "version": "1.1.1",
   "description": "template engine modified from doT js",
-  "main": "index.js",
+  "main": "donT.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
